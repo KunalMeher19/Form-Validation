@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.4);
+    min-height: 100vh;
+}
+
+.login {
+    font-size: 2.5rem;
+    text-align: center;
+    text-decoration: underline;
+    margin: 3rem 0rem;
+    color: bisque;
+}
+
+.main-wrapper{
+    width: 350px;
+    padding: 1.5rem;
+    border: 1px solid black;
+    margin: auto;
+    box-shadow: 0 0 8px black;
+    border-radius: 10px;
+}
+
+.name,
+.email, 
+.phoneNumber,
+.password,
+.conformPassword,
+.buttons{
+    padding: 0px 0px 15px 0px;
+    text-align: center;
+}
+
+label{
+    color: rgb(247, 247, 206);
+}
+
+label,
+input{
+    font-size: 1.2rem;
+}
+label::after{
+    content: "\a";
+    white-space: pre;
+}
+
+input{
+    width: 150px;
+    margin: 5px 0px;
+    padding: 0.25rem;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    text-align: center;
+    transition: ease-in-out 0.5s width;
+}
+input:focus{
+    width: 300px;
+}
+
+.buttons button{
+    padding: 0.3rem 0.75rem;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+button:hover{
+    background-color: aqua;
+    transform: scale(1.2);
+}
+
+#error{
+    color: red;
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 0.5rem 0.25rem;
+}
